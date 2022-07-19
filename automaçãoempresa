@@ -3,15 +3,19 @@ import pyperclip
 import time
 
 pyautogui.PAUSE = 3
+
 #Passo1: Entrar na pasta onde está a planilha
-pyautogui.press ('win')
-pyautogui.write ('JEFFERSON - TUTILABS')
-pyautogui.press ('enter')
-pyautogui.
+pyautogui.press('win')
+pyautogui.write('JEFFERSON - TUTILABS')
+pyautogui.press('enter')
+pyautogui.hotkey('ctrl', 'f')
+pyautogui.write('TUTI ACADEMY')
+pyautogui.press('enter')
 
+#Passo2: Selecionar a base de dados
+time.sleep (5)
+pyautogui.click (x=517, y=206, clicks=2)
 
-#Passo2: Selecionar a base de dados 
 #Passo3: Importar a base de dados para o Python 
 #Passo4: Calcular os indicadores 
 #Passo5: Enviar um relatório para os gestores 
-
